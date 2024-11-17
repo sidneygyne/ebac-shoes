@@ -1,3 +1,9 @@
+:root {
+    --cor-primaria: #e99313;
+    --cor-secundaria: #699200;
+    --cor-terciaria: #fff;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,9 +17,9 @@
     margin: 0 auto;
 }
 
-header {
+header, footer {
     
-    background-color: rgb(73, 115, 211);
+    background-color: var(--cor-primaria);
 }
 
 header .container {
@@ -32,23 +38,83 @@ header ul {
 }
 
 h1 {
-    color: #fff;
+    color: var(--cor-terciaria);
     font-weight: 700;
     font-style: italic;
 }
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--cor-terciaria);
     font-size: 1.2em;
+    font-weight: 900;
 }
 
 a:hover {
-    color: rgb(190, 197, 207);
-    border-bottom: 5px solid rgb(149, 152, 156);
+    color: var(--cor-secundaria);
+    border-bottom: 5px solid var(--cor-secundaria);
 }
 
 ul, li {
     list-style:none;
     clear: both;
+}
+
+.sobre-loja {
+    display: flex;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.sobre-loja img {
+    width: 40%;
+}
+
+h2 {
+    color: var(--cor-primaria);
+    font-style: italic;
+    padding: 15px 0;
+    margin-bottom: 45px;
+    border-bottom: 5px solid var(--cor-primaria);
+}
+
+p {
+    text-align: justify;
+    padding-bottom: 15px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    column-gap: 1%;
+    margin-bottom: 15px;
+}
+
+.produto {
+    margin: 20px 0 ;
+}
+
+.produto img {
+    width: 250px;
+    height: 250px;
+}
+
+button {
+    width: 100%;
+    background-color: var(--cor-primaria);
+    border: var(--cor-primaria);
+    padding: 8px 0;
+    color: var(--cor-terciaria);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-secundaria);
+}
+
+footer p {
+    color: var(--cor-terciaria);
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 600;
 }
