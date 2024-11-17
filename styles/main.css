@@ -99,6 +99,19 @@ p {
     height: 250px;
 }
 
+.produto h3 {
+    padding: 10px 0;
+}
+
+.produto p {
+    font-size: 0.8em;
+}
+
+.produto .valor {
+    font-size: 1em;
+    font-weight: 400;
+}
+
 button {
     width: 100%;
     background-color: var(--cor-primaria);
